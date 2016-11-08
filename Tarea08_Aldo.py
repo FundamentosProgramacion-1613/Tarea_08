@@ -1,3 +1,6 @@
+#encoding: UTF-8
+#Aldo Fuentes A01373294
+#Tarea 08
 
 def sumaAcumulada(lista):
     lstSuma = []
