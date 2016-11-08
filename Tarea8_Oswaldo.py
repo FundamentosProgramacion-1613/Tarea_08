@@ -15,10 +15,11 @@ def quitarElementos(lista):   #Funcion remover elemtos de lista siendo el primer
         print(lista,nueva)
         
 def removerRepetidos(lista):   #Funcion que comprueba los repetidos y los elimina solo dejando uno
+    nueva=lista[::]
     for i in lista:
-        x=lista.count(i)
+        x=nueva.count(i)
         if x!=1:
-            lista.remove(i)
+            nueva.remove(i)
     print(lista)
 
 def sumaLista(lista):   #Funcion para la suma de listas
