@@ -45,9 +45,6 @@ def revisarOrden(nums):
 
 #Revisamos si son anagramas
 def esAnagrama(string1,string2):
-    #Primero eliminamos los espacios, en caso de que haya 
-    prueba1=string1.replace(" ","")
-    prueba2=string2.replace(" ","")
     #Revisamos en prueba 1 que todas las letras estén en el 2
     for letra in prueba1:
         #Si la letra no está en el otro o se repite más veces en uno que en otro regresa falso
