@@ -45,14 +45,13 @@ def revisarOrden(nums):
 
 #Revisamos si son anagramas
 def esAnagrama(string1,string2):
-    #Revisamos en prueba 1 que todas las letras estén en el 2
-    for letra in prueba1:
-        #Si la letra no está en el otro o se repite más veces en uno que en otro regresa falso
-        if letra.lower() not in prueba2.lower() or prueba1.lower().count(letra)!=prueba2.lower().count(letra):
+    #Vamos a ver que ambos tengan el mismo número de letras, en caso contrario no son anagramas
+    if len(string1)!=len(string2):
             return False
-    #Se debe revisar de igual forma el segundo con el primero        
-    for letra in prueba2:
-        if letra.lower() not in prueba1.lower() or prueba1.lower().count(letra)!=prueba2.lower().count(letra):
+    #Revisamos que todas las letras del primer string estén en el segundo
+    for letra in string1:
+        #Si la letra no está en el otro o se repite más veces en uno que en otro regresa falso
+        if letra.lower() not in string2.lower() or string1.lower().count(letra)!=string2.lower().count(letra):
             return False
     #En caso de pasar ambos filtros regresa True
     return True    
