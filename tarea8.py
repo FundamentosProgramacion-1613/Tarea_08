@@ -59,6 +59,7 @@ def esAnagrama (palabra1,palabra2) :
     return False 
     
 #---------------------------------------------------    
+#esta funcion recorre la lista y si encenra un dígito duplicado regresa true
 def verificarDuplicados (lista) :
     for k in range (len(lista)): 
         repetido = lista.count(lista[k])
@@ -68,7 +69,7 @@ def verificarDuplicados (lista) :
     return False
 
 #----------------------------------------------------
-
+#función que elimina los datos repetidos y deja solo 1
 def eliminarRepetidos (lista):
     a =""
     for k in sorted(lista):
